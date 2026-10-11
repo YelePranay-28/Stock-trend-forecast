@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements.txt
+# Stock Price Prediction App — Python Dependencies
+#
+# Install all at once:
+#   pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Web framework & UI ────────────────────────────────────────────────────────
+streamlit>=1.32.0          # Main UI framework
+
+# ── Data fetching ─────────────────────────────────────────────────────────────
+yfinance>=0.2.36           # Yahoo Finance API wrapper
+
+# ── Data manipulation ─────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.26.0
+
+# ── Machine Learning ──────────────────────────────────────────────────────────
+scikit-learn>=1.4.0        # LinearRegression, RandomForest, metrics, scaler
+
+# ── Visualization ────────────────────────────────────────────────────────────
+plotly>=5.20.0             # Interactive charts (candlestick, line, bar, gauge)
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+requests>=2.31.0           # HTTP (used internally by yfinance)
