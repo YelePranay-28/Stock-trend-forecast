@@ -1,0 +1,23 @@
+# .streamlit/config.toml
+# Streamlit configuration file
+# Controls theme, server settings, and display options
+
+[theme]
+base             = "dark"
+primaryColor     = "#e94560"
+backgroundColor  = "#0f0f23"
+secondaryBackgroundColor = "#1a1a2e"
+textColor        = "#ffffff"
+font             = "sans serif"
+
+[server]
+headless         = true          # required for Streamlit Cloud deployment
+port             = 8501
+enableCORS       = false
+
+[browser]
+gatherUsageStats = false         # disable telemetry
+
+[runner]
+# Disable the file watcher in production (keeps the app stable)
+fastRerenderEnabled = true
